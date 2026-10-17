@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Bhumika — My Eternal Sunshine 🌻</title>
+  <meta name="description" content="A warm, dreamy floral sanctuary celebrating Bhumika, her family, her cherished friends, and our love story.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/butterflies.css">
+  <link rel="stylesheet" href="css/flowers.css">
+  <link rel="stylesheet" href="css/letters.css">
+</head>
+<body>
+
+  <!-- Floating Audio Player Widget -->
+  <div class="floating-audio-widget" id="audio-widget" title="Click to toggle our gentle romantic ambient melody">
+    <div class="audio-disk">♪</div>
+    <div class="audio-info">
+      <span class="audio-title">Our Sanctuary Melody</span>
+      <span class="audio-status">Click to Play</span>
+    </div>
+    <div class="audio-bars">
+      <div class="audio-bar"></div>
+      <div class="audio-bar"></div>
+      <div class="audio-bar"></div>
+    </div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <nav class="sanctuary-nav" id="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-logo-flower">🌻</span>
+        <div>
+          <span class="nav-brand-title">Bhumika</span>
+          <span class="nav-brand-subtitle">my sunshine</span>
+        </div>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="family.html" class="nav-link">Family & Roots</a></li>
+        <li><a href="friends.html" class="nav-link">Cherished Friends</a></li>
+        <li><a href="us.html" class="nav-link">You & Me</a></li>
+        <li><a href="letters.html" class="nav-link nav-cta-btn">The Letters 💌</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-sanctuary">
+    <div class="hero-sunburst"></div>
+    
+    <!-- Botanical Accents around Hero -->
+    <div class="botanical-corner botanical-top-left swaying-flower swaying-flower-slow">
+      <svg width="120" height="120" viewBox="0 0 100 100" fill="none">
+        <circle cx="35" cy="35" r="16" fill="#F59E0B" />
+        <circle cx="35" cy="35" r="9" fill="#78350F" />
+        <path d="M35 55 Q 38 80 40 95" stroke="#84A98C" stroke-width="4" stroke-linecap="round"/>
+        <path d="M40 70 Q 60 65 65 55 Q 50 75 39 78" fill="#84A98C"/>
+      </svg>
+    </div>
+
+    <div class="botanical-corner botanical-top-right swaying-flower swaying-flower-fast">
+      <svg width="140" height="140" viewBox="0 0 100 100" fill="none">
+        <circle cx="65" cy="35" r="18" fill="#FBBF24" />
+        <circle cx="65" cy="35" r="10" fill="#92400E" />
+        <path d="M65 55 Q 60 85 58 98" stroke="#84A98C" stroke-width="4" stroke-linecap="round"/>
+        <path d="M60 72 Q 40 68 35 58 Q 50 78 61 79" fill="#84A98C"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>✨</span> Dedicated to the most radiant girl in the universe
+      </div>
+
+      <h1 class="hero-title">
+        For My Dearest <span class="highlight-yellow">Bhumika</span>,<br>
+        My Eternal Sunshine
+      </h1>
+
+      <p class="hero-subtitle">
+        "Like a sunflower turning gently towards the morning light, my world will always find its warmth, its beauty, and its peace in you."
+      </p>
+
+      <div class="hero-actions">
+        <a href="#chapters-section" class="btn btn-primary">
+          <span>🌻</span> Walk Through The Garden
+        </a>
+        <button class="btn btn-secondary" data-open-letter="us">
+          <span>💌</span> Read My Love Letter
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Sunflower Garden Counter -->
+  <section style="max-width: 860px; margin: 1rem auto 4rem; padding: 0 1.5rem;">
+    <div class="glass-card" style="padding: 2.2rem; text-align: center; border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(255, 253, 240, 0.9) 0%, rgba(254, 249, 195, 0.75) 100%);">
+      <div style="font-size: 2.4rem; margin-bottom: 0.4rem;">🌻 💛 🌻</div>
+      <h3 class="font-serif" style="font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--text-heading);">Our Golden Sunflower Meadow</h3>
+      <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 580px; margin: 0 auto 1.4rem;">
+        Every sunflower represents a reason why you are cherished, a beautiful memory, or a heartfelt prayer for your happiness.
+      </p>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.2rem;">
+        <span style="font-family: var(--font-cormorant); font-size: 3rem; font-weight: 700; color: #B45309;" id="sunflower-counter">108</span>
+        <span style="font-family: var(--font-handwriting); font-size: 1.6rem; color: var(--color-sunflower-dark); text-align: left; line-height: 1.2;">
+          Sunflowers in Bloom<br><span style="font-size: 1.1rem; color: var(--text-muted);">planted just for you</span>
+        </span>
+      </div>
+      <button class="btn btn-primary" id="plant-sunflower-btn">
+        <span>🌻</span> Plant A Sunflower For Bhumika
+      </button>
+    </div>
+  </section>
+
+  <!-- Chapters Showcase -->
+  <main class="chapters-showcase" id="chapters-section">
+    <div class="section-head">
+      <span class="section-tag">A Journey of Cherished Memories</span>
+      <h2 class="section-title">The Three Chapters of Your Heart</h2>
+      <p style="max-width: 640px; margin: 0 auto; font-size: 1.1rem;">
+        Every chapter holds the people, the stories, and the love that make you the extraordinary person you are.
+      </p>
+    </div>
+
+    <div class="chapters-grid">
+      
+      <!-- Chapter 1: Family -->
+      <article class="glass-card chapter-card">
+        <img src="assets/images/p&k1.jpeg" alt="Her and Her Family Moments" class="chapter-card-img" />
+        <div class="chapter-card-content">
+          <span class="chapter-card-num">Chapter I</span>
+          <h3 class="chapter-card-title">The Roots of Her Heart</h3>
+          <p class="chapter-card-desc">
+            The foundation of unconditional love, warmth, and grace. Explore her tender family memories, childhood laughter, and the roots that raised her.
+          </p>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 1rem; border-top: 1px dashed rgba(234, 179, 8, 0.3);">
+            <a href="family.html" class="chapter-link-btn">
+              Step Into Chapter I &rarr;
+            </a>
+            <button class="explore-deep-btn" data-open-letter="family" title="Open Family Gratitude Letter">
+              <span>✉️</span> Letter
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 2: Friends -->
+      <article class="glass-card chapter-card">
+        <img src="assets/images/f&k1.jpeg" alt="Her Cherished Friends Memories" class="chapter-card-img" />
+        <div class="chapter-card-content">
+          <span class="chapter-card-num">Chapter II</span>
+          <h3 class="chapter-card-title">Golden Blooms of Friendship</h3>
+          <p class="chapter-card-desc">
+            Wildflower spirits, uncontrollable laughter, 2 AM heart-to-hearts, and the soulmates who make life’s journey so unforgettable.
+          </p>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 1rem; border-top: 1px dashed rgba(234, 179, 8, 0.3);">
+            <a href="friends.html" class="chapter-link-btn">
+              Step Into Chapter II &rarr;
+            </a>
+            <button class="explore-deep-btn" data-open-letter="friends" title="Open Friendship Letter">
+              <span>✉️</span> Letter
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 3: You & Me -->
+      <article class="glass-card chapter-card">
+        <img src="assets/images/a&k6.jpg" alt="You and Me Romantic Story" class="chapter-card-img" />
+        <div class="chapter-card-content">
+          <span class="chapter-card-num">Chapter III</span>
+          <h3 class="chapter-card-title">You & Me — Our Endless Sunshine</h3>
+          <p class="chapter-card-desc">
+            The quiet looks, the first sparks, the hand-in-hand sunset walks, and a forever promise written in petals. Abhay's romantic sanctuary for Bhumika.
+          </p>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 1rem; border-top: 1px dashed rgba(234, 179, 8, 0.3);">
+            <a href="us.html" class="chapter-link-btn">
+              Step Into Chapter III &rarr;
+            </a>
+            <button class="explore-deep-btn" data-open-letter="us" title="Open Love Letter">
+              <span>💌</span> Love Letter
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Letter Sanctuary Invitation Banner -->
+    <div class="letter-invite-card">
+      <div class="envelope-wax-badge">💌</div>
+      <h3 class="letter-invite-title font-serif">The Sanctuary of Letters</h3>
+      <p class="letter-invite-desc">
+        Each page contains a sealed personal letter written just for you. Open them with a click of the wax seal and unfold words meant for your soul.
+      </p>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="letters.html" class="btn btn-letter">
+          <span>📜</span> Enter The Letter Vault
+        </a>
+        <button class="btn btn-secondary" data-open-letter="us">
+          <span>✨</span> Unseal Abhay's Love Letter
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Floral Divider -->
+  <div class="floral-divider">
+    <div class="floral-divider-line"></div>
+    <div class="floral-divider-icon">
+      <span>🌻</span><span>✦</span><span>🦋</span><span>✦</span><span>🌻</span>
+    </div>
+    <div class="floral-divider-line"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="sanctuary-footer">
+    <p class="footer-quote">
+      "Wherever life plants you, my love, bloom with all your heart — because you are someone's whole sunshine."
+    </p>
+    <div class="footer-love">Created with all my heart for Bhumika &bull; Abhay</div>
+    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.8rem;">
+      Press on any photograph in the chapters to read its deep meaning, or click the camera icon to personalize with your own photos.
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/butterflies.js"></script>
+  <script src="js/petals.js"></script>
+  <script src="js/photo-manager.js"></script>
+  <script src="js/letters.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

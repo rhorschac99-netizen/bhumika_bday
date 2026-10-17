@@ -1,0 +1,181 @@
+/* ==========================================================================
+   FLORAL & NATURAL ELEMENTS STYLES
+   Drifting petals, swaying sunflowers, daisies, and blooming botanical accents
+   ========================================================================== */
+
+/* Petals Falling Canvas Layer */
+#petals-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 30;
+  overflow: hidden;
+}
+
+/* Botanical Corner & Edge Decorations */
+.botanical-corner {
+  position: absolute;
+  pointer-events: none;
+  z-index: 5;
+  transition: transform 0.5s ease;
+}
+
+.botanical-top-left {
+  top: -20px;
+  left: -20px;
+}
+
+.botanical-top-right {
+  top: -20px;
+  right: -20px;
+}
+
+.botanical-bottom-right {
+  bottom: -20px;
+  right: -20px;
+}
+
+/* Sunflower Swaying Animation */
+.swaying-flower {
+  transform-origin: bottom center;
+  animation: naturalBreeze 6s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.swaying-flower-slow {
+  animation-duration: 8.5s;
+  animation-delay: -2s;
+}
+
+.swaying-flower-fast {
+  animation-duration: 4.8s;
+  animation-delay: -1.2s;
+}
+
+@keyframes naturalBreeze {
+  0% {
+    transform: rotate(0deg) skewX(0deg);
+  }
+  30% {
+    transform: rotate(3deg) skewX(1deg);
+  }
+  70% {
+    transform: rotate(-3.5deg) skewX(-1.5deg);
+  }
+  100% {
+    transform: rotate(2deg) skewX(0.5deg);
+  }
+}
+
+/* Blooming Flower Animation */
+.blooming-flower {
+  transform-origin: center center;
+  animation: flowerBloom 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes flowerBloom {
+  0% {
+    transform: scale(0.2) rotate(-20deg);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.08) rotate(4deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Rotating Sunflower Center Petal Ring */
+.sunflower-petals-ring {
+  transform-origin: center center;
+  animation: slowPetalSpin 45s linear infinite;
+}
+
+@keyframes slowPetalSpin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Decorative Section Dividers with Floral Accents */
+.floral-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3.5rem auto;
+  max-width: 600px;
+}
+
+.floral-divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(234, 179, 8, 0.4), transparent);
+}
+
+.floral-divider-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-sunflower);
+  font-size: 1.4rem;
+  animation: gentlePulse 3s ease-in-out infinite;
+}
+
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Floating Petal DOM Elements (Fallback / Accent) */
+.drifting-petal {
+  position: absolute;
+  pointer-events: none;
+  background: radial-gradient(circle at 30% 30%, #FEF08A, #F59E0B);
+  border-radius: 50% 0 50% 50%;
+  opacity: 0.8;
+  filter: drop-shadow(0 2px 4px rgba(202, 138, 4, 0.15));
+  will-change: transform;
+}
+
+/* Interactive Flower Petal Sparkle on Click */
+.petal-sparkle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 14px;
+  height: 14px;
+  border-radius: 50% 0 50% 50%;
+  background: linear-gradient(135deg, #FEF08A, #F59E0B);
+  animation: sparkleFade 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes sparkleFade {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) scale(0.3) rotate(var(--rot));
+  }
+}
+
+/* Floral Card Crest */
+.card-floral-crest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  color: #D97706;
+}
